@@ -1,0 +1,37 @@
+object Form1: TForm1
+  Left = 398
+  Height = 300
+  Top = 180
+  Width = 400
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 400
+  DesignTimePPI = 120
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  LCLVersion = '1.9.0.0'
+  object clbLegend: TColorListBox
+    Left = 0
+    Height = 300
+    Top = 0
+    Width = 208
+    Style = []
+    Align = alLeft
+    ExtendedSelect = False
+    ItemHeight = 0
+    TabOrder = 0
+    Visible = False
+  end
+  object PaintBox1: TPaintBox
+    Left = 208
+    Height = 300
+    Top = 0
+    Width = 192
+    Align = alClient
+    OnMouseDown = PaintBox1MouseDown
+    OnPaint = PaintBox1Paint
+    OnResize = PaintBox1Resize
+  end
+end
